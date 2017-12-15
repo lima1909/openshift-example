@@ -1,0 +1,1 @@
+# Sammlung von OpenShift Beispielen

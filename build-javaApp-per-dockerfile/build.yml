@@ -1,0 +1,17 @@
+kind: "BuildConfig"
+apiVersion: "v1"
+metadata:
+  name: "sample-build" 
+spec:
+  source: 
+    type: "Binary"
+#    binary:
+#      asFile: "openshift-app.jar"
+  strategy: 
+    type: "Docker"
+    dockerStrategy:
+      dockerfilePath: "."
+  output: 
+    to:
+      kind: "ImageStream"
+      name: "sample"
