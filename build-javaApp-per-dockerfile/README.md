@@ -4,10 +4,10 @@
     $ oc new-project mysample
 
     # ImageStream anlegen
-    $ oc create -f .\imagestream.yml
+    $ oc create -f imagestream.yml
 
     # Build anlegen
-    $ oc create -f .\build.yml
+    $ oc create -f build.yml
 
     # Build starten
     $ oc start-build sample-build  --from-dir=.
