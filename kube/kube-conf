@@ -1,0 +1,19 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: /home/obelix/.kube/ca.crt
+    server: https://192.168.99.100:8443
+  name: minikube
+contexts:
+- context:
+    cluster: minikube
+    user: minikube
+  name: minikube
+current-context: minikube
+kind: Config
+preferences: {}
+users: 
+- name: minikube
+  user:
+    client-certificate: /home/obelix/.kube/client.crt
+    client-key: /home/obelix/.kube/client.key
